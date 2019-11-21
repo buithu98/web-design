@@ -1,0 +1,72 @@
+*, body {
+    margin:0;
+    padding:0
+}
+body {
+    width: 100%;
+}
+.box {
+    width: 500px;
+    height: 500px;
+    margin:0 auto;
+    background-color:  #2980b9;
+    position: relative;
+    border-radius: 100px;
+    background: -moz-linear-gradient(top, #ff7675 20%, #e74c3c 80%);
+    background: -o-linear-gradient(top, #ff7675 20%, #e74c3c 80%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.2, #ff7675), color-stop(0.8, #e74c3c));
+    overflow: hidden;
+    margin-top:50px;
+}
+.sun {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f1c40f;
+    z-index: 1;
+    position: absolute;
+    top: 80px;
+    left:105px;
+    animation: sun 15s infinite;
+    box-shadow: -5px 0px 60px #f1c40f;
+}
+@keyframes sun {
+    from {
+        top:-100px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+.mountain {
+    background-color: #485460;
+    width: 200px;
+    height: 240px;
+    position: absolute;
+    bottom: 0px;
+    transform: rotate(45deg);
+    left:-35px;
+    display: block;
+    z-index: 2;
+    box-shadow: -5px 0px 40px;
+}
+.mountain--big {
+    width: 300px;
+    height: 400px;
+    z-index: 4;
+
+}
+.mountain--biger {
+    width: 400px;
+    height: 400px;
+    z-index: 3;
+
+}
+.box .mountain--center {
+    left: 70px;
+    bottom: -140px;
+}
+.box .mountain--right {
+    left:245px;
+    bottom:-165px;
+}
